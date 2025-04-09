@@ -1,0 +1,54 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35913.81 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orchestralia.AppHost", "Orchestralia.AppHost\Orchestralia.AppHost.csproj", "{DEAA3076-1F72-4496-B878-7E86143A146C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orchestralia.ServiceDefaults", "Orchestralia.ServiceDefaults\Orchestralia.ServiceDefaults.csproj", "{757E07DE-C578-4281-E49B-C4E5F8BB5ACB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orchestralia.ApiService", "Orchestralia.ApiService\Orchestralia.ApiService.csproj", "{4A54AEB7-EA5A-26EF-FB85-323593C12748}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrdersService", "OrdersService\OrdersService.csproj", "{3B659766-7E0F-0DDB-4856-8F81A1D41537}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthService", "AuthService\AuthService.csproj", "{6CDAB7B3-DE4F-6FF5-06F0-D824F083F1AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryService", "InventoryService\InventoryService.csproj", "{091578C1-6C28-3185-2839-F0C07C55C3F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DEAA3076-1F72-4496-B878-7E86143A146C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEAA3076-1F72-4496-B878-7E86143A146C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEAA3076-1F72-4496-B878-7E86143A146C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEAA3076-1F72-4496-B878-7E86143A146C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{757E07DE-C578-4281-E49B-C4E5F8BB5ACB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{757E07DE-C578-4281-E49B-C4E5F8BB5ACB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{757E07DE-C578-4281-E49B-C4E5F8BB5ACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{757E07DE-C578-4281-E49B-C4E5F8BB5ACB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A54AEB7-EA5A-26EF-FB85-323593C12748}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A54AEB7-EA5A-26EF-FB85-323593C12748}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A54AEB7-EA5A-26EF-FB85-323593C12748}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A54AEB7-EA5A-26EF-FB85-323593C12748}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B659766-7E0F-0DDB-4856-8F81A1D41537}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B659766-7E0F-0DDB-4856-8F81A1D41537}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B659766-7E0F-0DDB-4856-8F81A1D41537}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B659766-7E0F-0DDB-4856-8F81A1D41537}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CDAB7B3-DE4F-6FF5-06F0-D824F083F1AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CDAB7B3-DE4F-6FF5-06F0-D824F083F1AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CDAB7B3-DE4F-6FF5-06F0-D824F083F1AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CDAB7B3-DE4F-6FF5-06F0-D824F083F1AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{091578C1-6C28-3185-2839-F0C07C55C3F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{091578C1-6C28-3185-2839-F0C07C55C3F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{091578C1-6C28-3185-2839-F0C07C55C3F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{091578C1-6C28-3185-2839-F0C07C55C3F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EDB2607C-213A-47AC-81BC-FFEF47A1D26F}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,11 @@
+﻿### Crear orden
+POST https://localhost:7096/orders
+Content-Type: application/json
+
+{
+  "product": "Laptop",
+  "quantity": 3
+}
+
+### Obtener orden (reemplaza ID después de la creación)
+GET https://localhost:7096/orders/{{id}}
