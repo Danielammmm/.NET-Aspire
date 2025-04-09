@@ -17,8 +17,8 @@ jobs:
     - name: 🧱 Instalar .NET 9
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: '9.0.100-preview.2'
-
+        dotnet-version: 9.0.201
+        
     - name: 🔧 Restaurar dependencias
       run: dotnet restore
 
