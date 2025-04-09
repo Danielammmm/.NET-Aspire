@@ -89,7 +89,7 @@ Para conocer más sobre cómo crear y usar GitHub Actions en general, consulta e
 
 ---
 
-## 🚀 Conclusión
+## 🚀 Conclusión 
 
 .NET Aspire facilita el desarrollo de arquitecturas distribuidas, ofreciendo visibilidad completa, configuraciones mínimas y una experiencia de desarrollo local fluida. Su integración con herramientas modernas como GitHub Actions y su soporte para servicios modulares lo convierten en una opción ideal para equipos que buscan profesionalizar su ciclo de desarrollo.
 
