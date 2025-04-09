@@ -29,4 +29,5 @@ jobs:
       run: dotnet publish Orchestralia/OrdersService/OrdersService.csproj -c Release -o ./publish
 
     - name: ✅ Resultado final
-      run: echo "✔️ Se podría hacer deploy: publicación exitosa ✅"
+      run: |
+        echo "✔️ Se podría hacer deploy: publicación exitosa ✅"
