@@ -1,0 +1,32 @@
+name: Test OrdersService
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  test-orders:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout código
+      uses: actions/checkout@v3
+
+    - name: Instalar .NET 9
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '9.0.100-preview.2'
+
+    - name: Restaurar dependencias
+      run: dotnet restore
+
+    - name: Construir solución
+      run: dotnet build --no-restore
+
+    - name: Ejecutar pruebas a ordersservice
+      run: |
+        dotnet run --project OrdersService &
+        sleep 10
+        curl --fail -X POST http://localhost:5173/orders -H "Content-Type: application/json" -d '{"product":"mouse","quantity":99}' && echo "❌ Esto no debería pasar" && exit 1 || echo "✅ Rechazó correctamente orden excesiva"
+        curl --fail -X POST http://localhost:5173/orders -H "Content-Type: application/json" -d '{"product":"laptop","quantity":1}' && echo "✅ Aceptó orden válida correctamente"
