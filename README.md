@@ -79,13 +79,12 @@ Al ejecutar `dotnet run` desde el proyecto `AppHost`, se despliega un dashboard 
 
 Se configuraron dos workflows en GitHub para automatizar procesos:
 
-1. **Pruebas automatizadas de órdenes**: verifica que el sistema rechace correctamente las órdenes no válidas y acepte las válidas.
-2. **Simulación de deploy**: realiza la compilación y muestra un mensaje si el sistema está listo para ser desplegado.
+1. **Simulación de deploy**: realiza la compilación y muestra un mensaje si el sistema está listo para ser desplegado.
 
-Para conocer más sobre cómo crear y usar GitHub Actions en general, consulta el siguiente repositorio de aprendizaje:
+Para más sobre cómo crear y usar GitHub Actions en general, consultar el siguiente repositorio:
 **[Repositorio Actions_Repo](https://github.com/Danielammmm/Actions_Repo)**
 
-> Nota: Este repositorio es para aprender a hacer GitHub Actions, no contiene los workflows específicos usados en este proyecto.
+> Nota: este repositorio es para aprender a hacer GitHub Actions, no contiene el workflowque se usó en este proyecto.
 
 ---
 
