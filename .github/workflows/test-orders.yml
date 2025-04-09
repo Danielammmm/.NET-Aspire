@@ -1,13 +1,12 @@
-name: Simular Deploy
+name: Test OrdersService
 
 on:
-  workflow_dispatch:
   push:
-    branches:
-      - main
+    branches: [ main ]
+  workflow_dispatch:
 
 jobs:
-  simulate-deploy:
+  test-orders:
     runs-on: ubuntu-latest
 
     steps:
@@ -25,9 +24,10 @@ jobs:
     - name: 🛠️ Compilar servicio
       run: dotnet build Orchestralia/OrdersService/OrdersService.csproj --no-restore
 
-    - name: 🚀 Publicar OrdersService
-      run: dotnet publish Orchestralia/OrdersService/OrdersService.csproj -c Release -o ./publish
-
-    - name: ✅ Resultado final
+    - name: 🧪 Probar comportamiento de órdenes
+      working-directory: Orchestralia/OrdersService
       run: |
-        echo "✔️ Se podría hacer deploy: publicación exitosa ✅"
+        dotnet run & 
+        sleep 10
+        curl --fail -X POST http://localhost:5173/orders -H "Content-Type: application/json" -d '{"product":"mouse","quantity":99}' && echo "❌ ERROR: Aceptó orden inválida" && exit 1 || echo "✅ Correcto: Rechazó orden inválida"
+        curl --fail -X POST http://localhost:5173/orders -H "Content-Type: application/json" -d '{"product":"laptop","quantity":1}' && echo "✅ Correcto: Aceptó orden válida" || exit 1
