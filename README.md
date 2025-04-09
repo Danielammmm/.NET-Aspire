@@ -1,5 +1,5 @@
 # .NET-Aspire
- 
+
 ## 🚀 ¿Qué es .NET Aspire?
 
 .NET Aspire es una herramienta moderna desarrollada por Microsoft para facilitar la **creación, orquestación y monitoreo** de aplicaciones distribuidas. Permite levantar múltiples microservicios con sus dependencias desde un solo proyecto controlador (**AppHost**) y proporciona un **dashboard visual interactivo** para gestionar y observar cada componente.
