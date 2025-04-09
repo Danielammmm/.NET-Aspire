@@ -11,26 +11,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: 📦 Clonar repositorio
+    - name: 📦 Clonar código
       uses: actions/checkout@v3
 
     - name: 🧱 Instalar .NET 9
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 9.0.201
-        
+
     - name: 🔧 Restaurar dependencias
-      run: dotnet restore
+      run: dotnet restore Orchestralia/OrdersService/OrdersService.csproj
 
-    - name: 🏗️ Compilar solución
-      run: dotnet build --no-restore
+    - name: 🛠️ Compilar servicio
+      run: dotnet build Orchestralia/OrdersService/OrdersService.csproj --no-restore
 
-    - name: 🚀 Intentar publicar OrdersService
+    - name: 🚀 Publicar OrdersService
+      run: dotnet publish Orchestralia/OrdersService/OrdersService.csproj -c Release -o ./publish
+
+    - name: ✅ Resultado final
       run: |
-        echo "Intentando simular un despliegue..."
-        if dotnet publish OrdersService/OrdersService.csproj -c Release -o ./publish; then
-          echo "✔️ Se podría hacer deploy: publicación exitosa ✅"
-        else
-          echo "❌ No se puede hacer deploy: falló la publicación ❌"
-          exit 1
-        fi
+        echo "✔️ Se podría hacer deploy: publicación exitosa ✅"
+
